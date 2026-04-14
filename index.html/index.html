@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício com Emoji</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;           
+            overflow: hidden;
+        }
+
+        .container-cinza {
+            background-color: #cdcdcd;
+            width: 85%;               
+            max-width: 900px;         
+            height: 400px;            
+            border: 2px solid #999;   
+            position: relative;        
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px; 
+        }
+
+        .titulo-tela {
+            position: absolute;
+            top: 40px;
+            left: 5vw;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        .menu-navegacao {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: flex; 
+            gap: 20px;     
+            list-style: none;
+        }
+
+        .menu-navegacao a {
+            text-decoration: none;
+            color: #000;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .emoji-central {
+            font-size: 100px; 
+            
+            user-select: none; 
+        }
+
+    </style>
 </head>
 <body>
-   <h1>Aula de ADS</h1> 
+
+    <h1 class="titulo-tela">Exercício</h1>
+
+    <div class="container-cinza">
+        
+        <ul class="menu-navegacao">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+        <div class="emoji-central">🤔</div>
+
+    </div>
+
 </body>
 </html>
